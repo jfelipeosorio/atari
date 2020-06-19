@@ -1,15 +1,25 @@
 # Aprendizaje Reforzado: Atari
-## 
-## Proyecto d: Predicting Boston Hoddddusing Prices
 
-### Install
+Repositorio creado por *Juan Felipe Osorio Ramírez* durante el curso de Minería de Datos en la Universidad Nacional de Colombia, Sede Bogotá.
 
-This project requires **Python** and the following Python libraries installed:
+El contenido (imágenes, teoría y código) se toma de las siguientes referencias y tiene con último fin la **academia**:
+1. Saito, S., Wenzhuo, Y., & Shanmugamani, R. (2018). Python Reinforcement Learning Projects: Eight hands-on projects exploring reinforcement learning algorithms using TensorFlow. Packt Publishing Ltd.
+
+2. Evans, L. C. (1983). An introduction to mathematical optimal control theory version 0.2. Lecture notes available at http://math.berkeley.edu/~evans/control.course.pdf .
+
+3. Sutton, R. S., & Barto, A. G. (1998). Introduction to reinforcement learning (Vol. 135). Cambridge: MIT press.
+
+4. Balakrishnan, K. (2020). TensorFlow Reinforcement Learning Quick Start Guide. Packt Publishing Ltd.
+
+### Dependencias
+
+Este proyecto requiere el uso del lenguaje **Python** y las siguientes librerías de instaladas:
 
 - [NumPy](http://www.numpy.org/)
 - [Pandas](http://pandas.pydata.org/)
 - [matplotlib](http://matplotlib.org/)
 - [scikit-learn](http://scikit-learn.org/stable/)
+- [TensorFlow](https://www.tensorflow.org/install/pip)
 
 You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html)
 
