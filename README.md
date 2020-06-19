@@ -19,7 +19,7 @@ Este proyecto requiere el uso del lenguaje **Python** y las siguientes librería
 - [Pandas](http://pandas.pydata.org/)
 - [matplotlib](http://matplotlib.org/)
 - [scikit-learn](http://scikit-learn.org/stable/)
-- [TensorFlow](https://www.tensorflow.org/install/pip)
+- [TensorFlow1x](https://www.tensorflow.org/install/pip)
 
 También se requiere tener algún software para correr y ejecutar un [Jupyter Notebook](http://ipython.org/notebook.html)
 
