@@ -11,7 +11,7 @@ El contenido (imágenes, teoría y código) se toma de las siguientes referencia
 
 4. Balakrishnan, K. (2020). TensorFlow Reinforcement Learning Quick Start Guide. Packt Publishing Ltd.
 
-### Dependencias
+### Sobre las Dependencias
 
 Este proyecto requiere el uso del lenguaje **Python** y las siguientes librerías de instaladas:
 
@@ -21,36 +21,33 @@ Este proyecto requiere el uso del lenguaje **Python** y las siguientes librería
 - [scikit-learn](http://scikit-learn.org/stable/)
 - [TensorFlow](https://www.tensorflow.org/install/pip)
 
-You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html)
+También se requiere tener algún software para correr y ejecutar un [Jupyter Notebook](http://ipython.org/notebook.html)
 
-If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included. 
+Si no se cuenta con Python instalado, se recomienda instalar la distribución [Anaconda](http://continuum.io/downloads) de Python, la cuál incluye muchos de los paquetes que se requieren para este proyecto y más... 
 
-### Code
+### Sobre el Código
 
-Template code is provided in the `boston_housing.ipynb` notebook file. You will also be required to use the included `visuals.py` Python file and the `housing.csv` dataset file to complete your work. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in `visuals.py` is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
+Existe una introducción teórica al desarrollo del algoritmo junto con la explicación detallada del código del algoritmo en el cuaderno `Atari.pynb`. Y el código para entrenar el agente se concentra en los siguientes tres scripts
 
-### Run
+- `model.py` 
+- `funcs.py`
+- `dqn.py`
 
-In a terminal or command window, navigate to the top-level project directory `boston_housing/` (that contains this README) and run one of the following commands:
+### Sobre la corrida
+
+En una terminal o ventana de comandos, navegue hasta el directorio en el que se clonó este proyecto y corra el siguiente comando:
 
 ```bash
-ipython notebook boston_housing.ipynb
+python dqn.py
 ```  
-or
-```bash
-jupyter notebook boston_housing.ipynb
-```
+Esto correrá el script `dqn.py` el cuál llamará los otros módulos `model.py` que contiene la creación de la red neuronal y `funcs.py` que organiza el pipeline de entrada del algoritmo.
 
-This will open the Jupyter Notebook software and project file in your browser.
+### Datos de aprendizaje
 
-### Data
+En el contexto del aprendizaje reforzado se deberán tener en cuenta las características del ambiente para entrenar nuestro agente. En particular usando los ambientes disponibles en [gym](https://gym.openai.com/envs/Breakout-v0/). Se elige el siguiente
 
-The modified Boston housing dataset consists of 489 data points, with each datapoint having 3 features. This dataset is a modified version of the Boston Housing dataset found on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Housing).
+#### Breakout-v0
 
-**Features**
-1.  `RM`: average number of rooms per dwelling
-2. `LSTAT`: percentage of population considered lower status
-3. `PTRATIO`: pupil-teacher ratio by town
+En este entorno, la observación es una imagen RGB de la pantalla, que es una matriz de formas (210, 160, 3). Cada acción se realiza repetidamente durante una duración de $k$ fotogramas, donde $k$ se muestrea de manera uniforme desde $\{2, 3 , 4 \}$.
 
-**Target Variable**
-4. `MEDV`: median value of owner-occupied homes
+### ¡ Que empiece la diversión !
