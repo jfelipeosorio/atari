@@ -3,6 +3,7 @@
 Repositorio creado por *Juan Felipe Osorio Ramírez* durante el curso de Minería de Datos en la Universidad Nacional de Colombia, Sede Bogotá.
 
 El contenido (imágenes, teoría y código) se toma de las siguientes referencias y tiene con último fin la **academia**:
+
 0. [Montenegro, Álvaro. Curso en Ciencia de Datos](https://github.com/AprendizajeProfundo/Ciencia-de-Datos)
 1. Saito, S., Wenzhuo, Y., & Shanmugamani, R. (2018). Python Reinforcement Learning Projects: Eight hands-on projects exploring reinforcement learning algorithms using TensorFlow. Packt Publishing Ltd.
 
